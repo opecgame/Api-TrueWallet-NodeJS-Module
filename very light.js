@@ -1,1 +1,1 @@
-let e=require('events');class tw extends e{constructor(a,b){super();let c='https://gift.truemoney.com/campaign/';let d=a.replace(c+'?v=',"");require('got').post(c+'vouchers/'+d+'/redeem',{json:{mobile:b}}).then(r=>{this.emit('msg',r.body)})}}module.exports=tw
+const e=require('events');class f extends e{constructor(a,b){super();let c='https://gift.truemoney.com/campaign/';let d=a.replace(c+'?v=',"");require('request').post({url:c+'vouchers/'+d+'/redeem',json:true,body:({"mobile":b})},(e,r,d)=>{this.emit('msg',d)})}}module.exports=f
