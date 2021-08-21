@@ -1,1 +1,1 @@
-let e=require('events');class twApi extends e{constructor(a,b){super();let c='https://gift.truemoney.com/campaign/';let d=a.replace(c+'?v=',"");require('got').post(c+'vouchers/'+d+'/redeem',{json:{mobile:b}}).then(r=>{this.emit('msg',r.body)})}}module.exports=twApi
+let e=require('events');class tw extends e{constructor(a,b){super();let c='https://gift.truemoney.com/campaign/';let d=a.replace(c+'?v=',"");require('got').post(c+'vouchers/'+d+'/redeem',{json:{mobile:b}}).then(r=>{this.emit('msg',r.body)})}}module.exports=tw
