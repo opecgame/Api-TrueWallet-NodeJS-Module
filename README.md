@@ -4,7 +4,7 @@ Wallet coupon clipping with NodeJs and callbacks for easier separation.
 อับเดต ลด loop 3 ช่วง + เบาเหี้ยๆเบาสัสๆ
 
 + 🐱‍👤: ยืดหยุ่น HTTP API ด้วย [GOT](https://www.npmjs.com/package/got#comparison)
-+ 📦: เบาเหี้ยๆเบาสัสๆ 260 bytes [อันนี้นะ](https://github.com/TinnerKung/Api-TrueWallet-NodeJS-Module/blob/main/very%20light.js)
++ 📦: เบาเหี้ยๆเบาสัสๆ 276 bytes [อันนี้นะ](https://github.com/TinnerKung/Api-TrueWallet-NodeJS-Module/blob/main/very%20light.js)
 + 🚀: เร็วปานกระสุนพระราชทาน
 + 🐱‍🏍: ใช้งานง่ายความยืดหยุ่นสูงงงงงงง
 
