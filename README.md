@@ -13,16 +13,7 @@ How To Use
 const twApi = require('./truemomey-code.js')
 async function donate(url, phone) {
   const data = await twApi(url, phone)
-  console.log(data) // Callback ออกมาเป็น Json
-}
-
-donate('https://gift.truemoney.com/campaign/?v=[ โค๊ตคูปอง ]', '[เบอร์โทร]');
-```
-
-```js
-const twApi = require('./truemomey-code.js')
-const data = await twApi('https://gift.truemoney.com/campaign/?v=[ โค๊ตคูปอง ]', '[เบอร์โทร]')
-
+  
 switch (data.status.code) {
     case "SUCCESS":
           console.log('ไดรับเงินแล้วจำนวน' + data.data.my_ticket.amount_baht)
@@ -48,6 +39,10 @@ switch (data.status.code) {
     default:
         break;
 }
+
+}
+
+donate('https://gift.truemoney.com/campaign/?v=[ โค๊ตคูปอง ]', '[เบอร์โทร]');
 ```
 
 ```js
